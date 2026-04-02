@@ -1,11 +1,8 @@
 #!/bin/bash
-# One-time setup: create virtual environment and install dependencies
+# One-time setup: install dependencies using uv
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+uv sync
 echo ""
 echo "Setup complete. To start the chatbot:"
-echo "  source .venv/bin/activate"
 echo "  export OPENAI_API_KEY=sk-..."
-echo "  python chatbot.py"
+echo "  uv run python chatbot.py"

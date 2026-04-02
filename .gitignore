@@ -8,6 +8,7 @@
 venv/
 env/
 
+
 # Embedding cache (regenerated automatically)
 embeddings_cache.json
 
